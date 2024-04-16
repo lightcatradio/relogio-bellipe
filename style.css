@@ -44,7 +44,6 @@ body,
 main {
   width: 100vw;
   height: 100vh;
-  background-color: white;
   color: #0f172a;
 }
 
@@ -91,17 +90,25 @@ h3 {
 #borda-direita {
   position: absolute;
   height: 100vh;
+  display: none;
 }
 
 #borda-direita {
   right: 0;
 }
 
-.tempos-mobile {
+#fundo-mobile {
+  opacity: 0.9;
+  filter: saturate(1.2);
+  z-index: -1;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-attachment: fixed;
   display: none;
 }
 
-img {
+.tempos-mobile {
   display: none;
 }
 
@@ -114,6 +121,9 @@ img {
 }
 
 @media (max-width: 445px) {
+  #fundo-mobile {
+    display: block;
+  }
   .container {
     max-width: 420px;
   }
