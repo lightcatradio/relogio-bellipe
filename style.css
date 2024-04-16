@@ -115,7 +115,8 @@ h3 {
 /* ---------- Media Querys ---------- */
 
 @media (min-width: 1270px) {
-  img {
+  #borda-esquerda,
+  #borda-direita {
     display: block;
   }
 }
