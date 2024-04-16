@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  font-family: "General Sans", sans-serif;
+}
+
+/* ---------- Classes de utilidade ---------- */
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.espaco-P {
+  margin-top: 2.25rem;
+}
+
+.espaco-G {
+  margin-top: 4.5rem;
+}
+
+.flex-center-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-center-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------- Estilos gerais ---------- */
+
+body,
+main {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  color: #0f172a;
+}
+
+/* div {
+  border: 1px solid red;
+} */
+
+.titulo {
+  width: max-content;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 5rem;
+  letter-spacing: 10px;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+.dentro-h2-texto {
+  font-size: 200%;
+}
+
+.tempos-lista {
+  word-spacing: 30px;
+}
+
+.texto-abaixo {
+  color: rgba(15, 23, 42, 0.5);
+}
+
+#borda-esquerda,
+#borda-direita {
+  position: absolute;
+  height: 100vh;
+}
+
+#borda-direita {
+  right: 0;
+}
+
+.tempos-mobile {
+  display: none;
+}
+
+img {
+  display: none;
+}
+
+/* ---------- Media Querys ---------- */
+
+@media (min-width: 1270px) {
+  img {
+    display: block;
+  }
+}
+
+@media (max-width: 445px) {
+  body {
+    overflow: hidden;
+  }
+  .container {
+    max-width: 420px;
+  }
+  h1 {
+    font-size: 3.5rem;
+    letter-spacing: 5px;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  .dentro-h2-texto {
+    font-size: 150%;
+  }
+
+  .tempos-lista-mobile {
+    font-size: 50%;
+    letter-spacing: normal;
+    word-spacing: 10px;
+  }
+
+  span {
+    margin: 0;
+  }
+
+  .tempos-mobile {
+    display: block;
+  }
+
+  .tempos-desktop {
+    display: none;
+  }
+
+  .texto-abaixo {
+    margin-bottom: 30px;
+  }
+}

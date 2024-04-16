@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Relógio Bellipe</title>
+    <link rel="shortcut icon" type="image/jpg" href="imagens/coracaoICO.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <img
+        id="borda-esquerda"
+        src="imagens/borda-esquerda.png"
+        alt="borda-esquerda"
+      />
+      <img
+        id="borda-direita"
+        src="imagens/borda-direita.png"
+        alt="borda-direita"
+      />
+      <div class="container flex-center-column">
+        <div class="titulo espaco-P">
+          <h2>
+            Quer saber há quanto tempo <br />
+            <span class="dentro-h2-texto">❤️ Felipe e Isabella ❤️</span>
+            <br />namoram???
+          </h2>
+        </div>
+        <div class="espaco-P">
+          <h3>Seus problemas acabaram! O casal está junto há...</h3>
+        </div>
+        <div class="tempos-desktop espaco-G">
+          <h1 id="tempo">00:00:00:00:00:00:00</h1>
+          <h2 class="tempos-lista">
+            Anos Meses Semanas Dias Horas Minutos Segundos
+          </h2>
+        </div>
+        <div class="tempos-mobile espaco-P">
+          <h1>
+            <span id="anos-meses">00:00</span><br />
+            <span class="tempos-lista-mobile">Anos Meses</span><br />
+            <span id="semanas-dias">00:00</span><br />
+            <span class="tempos-lista-mobile">Semanas Dias</span><br />
+            <span id="horas-minutos">00:00</span><br />
+            <span class="tempos-lista-mobile">Horas Minutos</span><br />
+            <span id="segundos">00</span><br />
+            <span class="tempos-lista-mobile">Segundos</span><br />
+          </h1>
+        </div>
+        <div class="espaco-G">
+          <h4 class="texto-abaixo">(Data do pedido: 18/03/2024)</h4>
+        </div>
+      </div>
+    </main>
+    <script defer src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function calcularDiferencaDeTempo(dataInicial, dataFinal) {
+        const diferenca = Math.abs(dataFinal - dataInicial);
+        const segundosTotais = Math.floor(diferenca / 1000);
+
+        const segundosPorMinuto = 60;
+        const segundosPorHora = segundosPorMinuto * 60;
+        const segundosPorDia = segundosPorHora * 24;
+        const segundosPorSemana = segundosPorDia * 7;
+        const segundosPorMes = segundosPorDia * 30; 
+        const segundosPorAno = segundosPorDia * 365; 
+
+        const anos = Math.floor(segundosTotais / segundosPorAno);
+        const meses = Math.floor(segundosTotais / segundosPorMes);
+        const semanas = Math.floor(segundosTotais / segundosPorSemana);
+        const dias = Math.floor(segundosTotais / segundosPorDia) % 30; 
+        const horas = Math.floor(
+          (segundosTotais % segundosPorDia) / segundosPorHora
+        );
+        const minutos = Math.floor(
+          (segundosTotais % segundosPorHora) / segundosPorMinuto
+        );
+        const segundos = segundosTotais % segundosPorMinuto;
+
+        return {
+          anos,
+          meses,
+          semanas,
+          dias,
+          horas,
+          minutos,
+          segundos,
+        };
+      }
+
+      function formatarTempo(tempo) {
+        return `${tempo.anos} anos, ${tempo.meses} meses, ${tempo.semanas} semanas, ${tempo.dias} dias, ${tempo.horas} horas, ${tempo.minutos} minutos, ${tempo.segundos} segundos`;
+      }
+
+      const dataInicial = new Date("2024-03-18T00:00:00");
+
+      setInterval(() => {
+        const dataAtual = new Date();
+        const diferencaDeTempo = calcularDiferencaDeTempo(
+          dataInicial,
+          dataAtual
+        );
+        const tempoFormatado = formatarTempo(diferencaDeTempo);
+        console.log(
+          `Desde 18/03/2024 00:00:00 passaram: ${tempoFormatado}`
+        );
+      }, 1000);
+    </script>
+  </body>
+</html>
