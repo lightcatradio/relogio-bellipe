@@ -114,9 +114,6 @@ img {
 }
 
 @media (max-width: 445px) {
-  body {
-    overflow: hidden;
-  }
   .container {
     max-width: 420px;
   }
