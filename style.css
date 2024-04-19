@@ -79,7 +79,7 @@ h3 {
 }
 
 .tempos-lista {
-  word-spacing: 30px;
+  word-spacing: 25px;
 }
 
 .texto-abaixo {
@@ -121,12 +121,12 @@ h3 {
   }
 }
 
-@media (max-width: 445px) {
+@media (max-width: 800px) {
   #fundo-mobile {
     display: block;
   }
   .container {
-    max-width: 420px;
+    max-width: 800px;
   }
   h1 {
     font-size: 3.5rem;
