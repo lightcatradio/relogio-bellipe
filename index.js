@@ -29,11 +29,11 @@ function calcularDiferencaDeTempo(dataInicial, dataFinal) {
 
 function formatarTempo(tempo) {
   const doisDigitos = (valor) => String(valor).padStart(2, "0");
-  return `${doisDigitos(tempo.anos)}:${doisDigitos(tempo.meses)}:${doisDigitos(
-    tempo.dias
-  )}:${doisDigitos(tempo.horas)}:${doisDigitos(tempo.minutos)}:${doisDigitos(
-    tempo.segundos
-  )}`;
+  return `${doisDigitos(tempo.anos)} : ${doisDigitos(
+    tempo.meses
+  )} : ${doisDigitos(tempo.dias)} : ${doisDigitos(tempo.horas)} : ${doisDigitos(
+    tempo.minutos
+  )} : ${doisDigitos(tempo.segundos)}`;
 }
 
 function formatarTempoMobile(tempo) {

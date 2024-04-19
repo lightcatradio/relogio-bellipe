@@ -63,7 +63,8 @@ h3 {
 
 h1 {
   font-size: 5rem;
-  letter-spacing: 10px;
+  /* letter-spacing: 15px; */
+  word-spacing: 10px;
 }
 
 h2 {
@@ -79,7 +80,38 @@ h3 {
 }
 
 .tempos-lista {
-  word-spacing: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+#lista-anos {
+  position: relative;
+  right: 130px;
+}
+
+#lista-meses {
+  position: relative;
+  right: 50px;
+}
+
+#lista-dias {
+  position: relative;
+  left: 30px;
+}
+
+#lista-horas {
+  position: relative;
+  left: 110px;
+}
+
+#lista-minutos {
+  position: relative;
+  left: 150px;
+}
+
+#lista-segundos {
+  position: relative;
+  left: 170px;
 }
 
 .texto-abaixo {
@@ -121,12 +153,12 @@ h3 {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 950px) {
   #fundo-mobile {
     display: block;
   }
   .container {
-    max-width: 800px;
+    max-width: 950px;
   }
   h1 {
     font-size: 3.5rem;
